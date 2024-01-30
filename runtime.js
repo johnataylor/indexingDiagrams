@@ -12,7 +12,7 @@ const question = "what Fit Kit is needed to use Shimano Ultegra cranks on my 68m
 
 async function main() {
   const response = await openai.chat.completions.create({
-    model: "gpt-4-vision-preview",
+    model: "gpt-4-1106-preview",
     max_tokens: 4096,
     messages: [
       {

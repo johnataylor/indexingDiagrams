@@ -10,7 +10,11 @@ function toBase64(filePath) {
     return 'data:image/png;base64,' + Buffer.from(img).toString('base64');
 }
 
-var rx4m = "C:\\private\\data\\rx4m.png";
+//var instructions = "Describe this image in detail.";
+//var path = "C:\\private\\data\\rx4m.png";
+
+var instructions = "Flatten and enumerate all the information held in this table.";
+var path = "C:\\private\\data\\compatibility.png";
 
 async function main() {
   const response = await openai.chat.completions.create({
@@ -20,11 +24,11 @@ async function main() {
       {
         role: "user",
         content: [
-          { type: "text", text: "Describe this image in detail." },
+          { type: "text", text: instructions },
           {
             type: "image_url",
             image_url: {
-              "url": toBase64(rx4m),
+              "url": toBase64(path),
             },
           },
         ],

@@ -5,7 +5,7 @@ import fs from 'fs';
 var baseURL = 'https://api.openai.com/v1'
 //var baseURL = 'http://localhost:3000/v1'
 
-const instructions = `You are a subject matter expert and can answer questions using the uploaded files. Only use the data in the files. If you cannot file the answer say "I don't know."`;
+const instructions = `You are a subject matter expert and can answer questions using the uploaded files. Only use the data in the files. If you cannot find the answer say "I don't know."`;
 
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY, baseURL: baseURL });
 

@@ -2,7 +2,7 @@
 import OpenAI from "openai";
 import fs from 'fs';
 
-var instructions = "Describe this image in detail. If the image appear to be a table, list all the contents in your description such that any relationships within the content implied by the tabular arrangement are retained. Extract any terms that would be useful in a search engine.";
+const instructions = "Describe this image in detail. If the image appears to be a table, list all the contents in your description such that any relationships within the content implied by the tabular arrangement are retained. Extract any terms that would be useful in a search engine.";
 
 const openai = new OpenAI();
 

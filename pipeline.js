@@ -9,7 +9,7 @@ const assistantName = 'atv expert';
 const fullPathToPdf = 'c:\\data\\Yamaha_Kodiak_450.pdf';
 const pathForFiles = 'c:\\data\\cache';
 const beginPageNumber = 10;
-const endPageNumber = 11;
+const endPageNumber = 15;
 
 const pdfDocument = await loadPdfDocument(fullPathToPdf);
 

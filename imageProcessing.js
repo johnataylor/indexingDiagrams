@@ -17,7 +17,11 @@ export async function createTextFromPng(pngFileName, txtFileName) {
 
   if (!exists) {
 
-    const instructions = "Describe this image in detail. If the image appears to be a table, list all the contents in your description such that any relationships within the content implied by the tabular arrangement are retained. Extract any terms that would be useful in a search engine.";
+    const instructions =
+      "Describe this image in detail. If the image appears to be a table,"
+      + " list all the contents in your description such that any relationships within"
+      + " the content implied by the tabular arrangement are retained. Extract any terms"
+      + " that would be useful in a search engine.";
 
     const message = {
       role: "user",
